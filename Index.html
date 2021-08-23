@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <main class="main">
+    <head class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <br>
+        <br>
+        <Title>Manasha Fernando Portfolio</Title>
+        <link href="quizstyle.css" type="text/css" rel="stylesheet">
+    </head>
+    </main>
+    <body class= "alltext">
+        <nav class= "topnav" id="portfoliotopnav">
+        <!--This is links to each heading at the top-->
+        <a href="#aboutsection">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#accomplishmentssection">Accomplishments</a>
+        <a href="#contactsection">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+        </nav>
+        <header>
+        <h1 class="heading1">Manasha Fernando</h1>
+        </header>
+        <!--This is the about section-->
+        <div id="aboutsection">
+           <a href="https://www.linkedin.com/in/manasha-fernando-7062611a9/" target="_blank"> 
+              <figure>
+                   <img class= "img" src="Manasha_Photo.jpg" width=300 height=200/ alt="Manasha Fernando."></a>
+              </figure>
+              <figcaption> </figcaption>
+        <h2 id="about" class="heading uppercase"> About</h2>
+        <p> I'm studying a PhD in Implementation Science at the 
+           <a href="https://www.qut.edu.au/research/centre-for-healthcare-transformation" target="_blank"> 
+            <strong> Queensland University of Technology </strong> </a>. Partnered with the 
+           <a href="https://www.aushsi.org.au/" target="_blank"><em>Australian Centre for Health 
+            Services Innovation (AusHSI)</em></a>, <a href="https://metrosouth.health.qld.gov.au/" target="_blank">
+            <em> Metro South Health </em> </a> and 
+            the <a href="https://www.digitalhealthcrc.com/" target="_blank">
+                <em>Digital Health Cooperative Research Center (DHCRC) </em></a>.
+                I am researching the use of Implementation Science in implementing 
+            Computerised Clinical Decision Support Systems (CDSS)
+            such as dashboards in hospital settings.</p>
+            <br>
+            <br>
+        </div>
+        <!--This is the skills section: research, interpersonl and Technical-->
+            <div id=skills>
+        <h3 class="skills">Skills</h3>
+        <h4>Research Skills</h4>
+        <ul class="list">
+            <li>Report Writing</li>
+            <li>Data Collection</li>
+            <li>Data Analysis</li>
+        </ul>
+        <h4>Interpersonal Skills</h4>
+        <ul class="list">
+            <li>Active Listening</li>
+            <li>Leadership</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+        </ul>
+        <h4>Technical Skills</h4>
+        <ul class="list">
+            <li>Programming language</li>
+            <li>Project Management</li>
+            <li>Use of Statistical Program R</li>
+        </ul>
+        </div>
+        <!--This is the accomplishments-->
+        <div id="accomplishmentssection">
+        <h2 class="accomplishments">Accomplishments</h2>
+        <table class="table">
+            <tr>
+                <th scope="col">Publications</th>
+                <th scope="col">Awards</th>
+                <th scope="col">Presentation</th>
+            </tr>
+            <tr>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+                <td>Coming Soon</td>
+            </tr>
+        </table>
+        </div>
+        <!--This is the contact section with link to LinkedIn-->
+        <div id="contactsection">
+        <h2 class="contactform">Contact</h2>
+        <a href="https://www.linkedin.com/in/manasha-fernando-7062611a9/" target="_blank">LinkedIn</a>
+      <!--Form for leaving a comment but submit doesn't work yet-->
+        <h2> Leave a Comment </h2>
+        <form>
+            <label for="name">Name*:</label>
+            <br>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <br>
+            <label for="email">*Email:</label>
+            <br>
+            <input id="email" type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br>
+            <br>
+            <label for="mobile"> Mobile (optional):</label> 
+            <br>
+            <input type="tel"name="mobile" id="mobile"pattern="[0-9] {10,16}">
+            <br>
+            <br>
+            <p class= "message"> *Enter Your Message:</p>
+            <textarea id="Comment" name="Comment"rows="5" cols="30">Please Leave your Comment</textarea>
+            <br>
+            <br>
+            <input type="submit">
+            <h1>Take the portfolio quiz</h1>
+            <h3>What have you learnt about Manasha?"</h3>
+                <link href="Quiz.html" type="text/css" rel="stylesheet">
+            </p>
+            <div id="quiz"></div>
+            <button id="submit">Submit Quiz</button>
+            <div id="results"></div>
+            <script src="nav.js"></script>
+            <script src="quiz.js"></script>
+        </form>
+        </div>
+    </body>
+</html>
